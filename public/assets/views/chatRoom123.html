@@ -1,0 +1,64 @@
+<div class="container" ng-controller="chatCtrl" id="main">
+        <!-- <h1>{{uname}} Welome to Chat Room </h1> -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><strong><em>{{uname}} WELCOME TO CHAT </em></strong></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">                
+            </div>
+        </div>
+
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="enter username to remove" ng-model="removeUser">
+            </div>
+            <button ng-click="remove" class="btn btn-default">Remove User</button>
+        </form>
+    </nav>            
+
+    <div class="row" id="my_row">
+        <div class="col-lg-8 col-md-8" id="col_1">
+            <div class="row" id="my_row">
+                <div class="col-md-12">
+                    <div class="myMsgArea">
+                        <br>
+                        <h4>Group Chat Window</h4>
+                        <ul  ng-repeat="i in msgArray">
+                            <li class="myLi">{{i}}</li>    
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+            </div>        
+            <div class="row" id="my_row1">
+                <div class="col-md-12 col-xs-offset-0">
+                    <input  id="msg" type="text" placeholder="message..." ng-model="msg">
+                </div>
+            </div>
+            <div class="row" id="my_row">
+                <div class="col-lg-12 col-md-12" id="col_3">
+                    <button ng-click="send()"class="btn btn-default" type="button" id="send_btn">  <i class="glyphicon glyphicon-send"></i></button>
+                    <button class="btn btn-default" type="button" id="send_btn"> <i class="glyphicon glyphicon-duplicate"></i></button>
+                    <button id= "refresh"ng-click="refreshForOnlineUsers()" class="btn btn-default" type="button" id="send_btn">Refresh</button>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4" id="col_1">
+            <div class="row" id="my_row">
+                
+                <div class ="container">
+                    <div class="myDivForOnlineUsers">
+                        <p><strong>Online Users # {{onlineUsers}}</strong></p>
+                        <ul class="ul_1"  ng-repeat="i in usersArray">
+                            <li class="myLi_1">{{i}}</li>
+                        </ul>
+
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

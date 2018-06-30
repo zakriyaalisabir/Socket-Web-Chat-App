@@ -1,0 +1,41 @@
+
+<!--login Portal-->
+<div ng-controller="loginCtrl" id="mainBody">
+    <div id="main-div">
+        <div id="container">
+            <div id="login-via">
+                <h3 class="text-center text-info">Login Via</h3>
+                <div class="row" id="button-row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <button class="btn btn-default" type="button" id="fb"> </button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <button class="btn btn-default" type="button" id="gmail"> </button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <button class="btn btn-default" type="button" id="twitter"> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="myRow">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                    <h6>______________ </h6></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h6 class="text-center text-info" id="or"><strong>Or </strong></h6></div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                    <h6>______________ </h6></div>
+            </div>
+            <form id="myForm">
+
+                <input class="form-control" type="text" placeholder="Enter A User Name" id="username" ng-model="userName">
+            </form>
+            <button class="btn btn-default  btn-lg" type="button" id="login" ng-click="joinChat()">Join Chat </button>
+        </div>
+        <div id="container-behind"></div>
+        <div id="container-behind-2"></div>
+    </div>
+
+</div>
+
+    
+    

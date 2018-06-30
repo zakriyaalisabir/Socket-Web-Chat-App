@@ -1,0 +1,25 @@
+{
+  "name": "chatappfinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "http": "0.0.0",
+    "mongodb": "^3.0.1",
+    "mongoose": "^5.0.0-rc1",
+    "multer": "^1.3.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
+    "socket.io-file": "^2.0.2",
+    "socket.io-file-client": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZAKRIYA ALI SABIR",
+  "license": "ISC"
+}
